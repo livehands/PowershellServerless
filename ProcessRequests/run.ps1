@@ -7,6 +7,6 @@ if ($Documents.Count -gt 0) {
     ForEach($Document in $Documents) {
         #$outputSbMsg = $document
 
-        Push-OutputBinding -name outputSbMsg -value $($Document.id)
+        Push-OutputBinding -name outputSbMsg -value $Document
     }
 }
