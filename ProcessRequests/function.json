@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "Documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "karimkaazenable_DOCUMENTDB",
+      "databaseName": "subrequests",
+      "collectionName": "requests",
+      "createLeaseCollectionIfNotExists": "true"
+    },
+    {
+      "type": "serviceBus",
+      "direction": "out",
+      "connection": "karimkazenable_SERVICEBUS",
+      "name": "outputSbMsg",
+      "queueName": "createsubscription"      
+    }
+  ]
+}
